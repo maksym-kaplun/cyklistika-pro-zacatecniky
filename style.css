@@ -62,3 +62,35 @@ img {
   height: auto;
   border-radius: 8px;
 }
+
+/* VĚTŠÍ OBRAZOVKY */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .uvod {
+    grid-column: 1 / -1;
+  }
+}
